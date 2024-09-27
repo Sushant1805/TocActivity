@@ -1,28 +1,33 @@
-.main{
+.main {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between; /* Ensure equal or proportional spacing */
+    height: 100vh; /* Take up full viewport height */
 }
 
-.container{
+.container {
+    flex: 0 0 55%; /* Adjust this percentage for 40% width */
     display: flex;
     justify-content: center;
-    margin: 2rem 5rem 5rem 5rem;
-    width: 38em;
-    height: 50em;
+    margin: 2rem;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
 }
 
-.divider{
+.divider {
+    flex: 0 0 45%; /* Adjust this percentage for 60% width */
     display: flex;
-    width: 50em;
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
     background-color: #001F3F;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
-.login-img{
-    margin-top: 10rem;
-    margin-left: 5rem;
-    width: 40rem;
-    height: 25rem;
+.login-img {
+    width: 90%;
+    max-width: 40rem;
+    height: auto;
 }
 
 
