@@ -24,10 +24,12 @@
     box-sizing: border-box;
 }
 
-.login-img {
-    width: 90%;
-    max-width: 40rem;
-    height: auto;
+.login-img{
+    margin-top: 1rem;
+    margin-left: 1em;
+
+    width: 40rem;
+    height: 25rem;
 }
 
 
