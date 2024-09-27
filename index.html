@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <div class="main">
+    
+    <div class="container">
+        <div class="border-b border-gray-900/10 pb-12">
+            <h2 class="text-base font-bold leading-7 text-blue-900">Personal Information</h2>
+            <p class="mt-1 text-sm leading-6 text-gray-600">Please Provide your Personal Information!</p>
+        
+            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            <div class="sm:col-span-3">
+                <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+                <div class="mt-2">
+                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+        
+            <div class="sm:col-span-3">
+                <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+                <div class="mt-2">
+                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+        
+            <div class="sm:col-span-4">
+                <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                <div class="mt-2">
+                <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+
+            <div class="sm:col-span-3">
+                <label for="mobile-number" class="block text-sm font-medium leading-6 text-gray-900">Mobile Number</label>
+                <div class="mt-2">
+                <input type="tel" name="mobile-number" id="mobile-number" autocomplete="tel" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+        
+            <div class="sm:col-span-3">
+                <label for="country" class="block text-sm font-medium leading-6 text-gray-900">Country</label>
+                <div class="mt-2">
+                <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                    <option>United States</option>
+                    <option>India</option>
+                    <option>Nigeria</option>
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                </select>
+                </div>
+            </div>
+        
+            <div class="col-span-full">
+                <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Street address</label>
+                <div class="mt-2">
+                <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+        
+            <div class="sm:col-span-2 sm:col-start-1">
+                <label for="city" class="block text-sm font-medium leading-6 text-gray-900">City</label>
+                <div class="mt-2">
+                <input type="text" name="city" id="city" autocomplete="address-level2" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+        
+            <div class="sm:col-span-2">
+                <label for="region" class="block text-sm font-medium leading-6 text-gray-900">State / Province</label>
+                <div class="mt-2">
+                <input type="text" name="region" id="region" autocomplete="address-level1" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+        
+            <div class="sm:col-span-2">
+                <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">ZIP / Postal code</label>
+                <div class="mt-2">
+                <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+
+            <div class="sm:col-span-full">
+                <button type="submit" class="mt-4 inline-flex justify-center rounded-md bg-indigo-600 py-2 px-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2">Submit</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="divider">
+            <img class = "login-img"src="login.svg">
+        </div>
+   </div>
+
+   <div id="alert-modal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center">
+    <div class="bg-white rounded-lg shadow-lg p-6 max-w-md mx-auto">
+        <h2 class="text-lg font-bold mb-4">Thank You!</h2>
+        <p>Thank you for providing your information.</p>
+        <button id="close-alert" class="mt-4 inline-flex justify-center rounded-md bg-indigo-600 py-2 px-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2">
+            Close
+        </button>
+    </div>
+</div>
+
+    
+      <script src="https://cdn.tailwindcss.com"></script> 
+      <script src="script.js"></script>
+</body>
+</html>
